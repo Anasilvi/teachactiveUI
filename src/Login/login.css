@@ -1,0 +1,46 @@
+.loginPage {
+    height: 100%;
+    display: flex;
+  }
+  
+  .loginPageLeft {
+    background-image: linear-gradient(to right, #00b4b898, white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+  
+  .loginPageRight {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 45%;
+  }
+  
+  .leftLogoSmall {
+    width: 1000px;
+    max-width: 58%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .loginButton {
+    width: 100%;
+    background: #00b4b8;
+    color: #ffffff;
+    font-family: "Lato", sans-serif;
+    border-radius: 5px;
+  }
+  
+  .title {
+    font-family: "Lato", sans-serif;
+    color: #383838;
+    text-align: left;
+  }
+  
+  .label {
+    font-family: "Lato", sans-serif;
+    color: #383838;
+  }

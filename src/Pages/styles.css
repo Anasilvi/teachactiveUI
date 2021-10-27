@@ -1,0 +1,226 @@
+    
+    .mainMenuButton {
+        height: 250px;
+        width: 250px;
+        min-width: 50px;
+        min-height: 50px;
+        background: #00b4b880;
+        box-shadow: 8px 15px 15px #bebdbd;
+        font-family: "Lato", sans-serif;
+        border-radius: 15px;
+        display: block;
+    }
+  
+  
+  .title {
+    font-family: "Lato", sans-serif;
+    color: #383838;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -8px;
+    margin-top: 30px;
+  }
+
+  .subtitle {
+    font-family: "Lato", sans-serif;
+    color: #383838;
+    text-align: center;
+    font-size: 20px;
+    
+  }
+  
+  .label {
+    font-family: "Lato", sans-serif;
+    color: #383838;
+  }
+
+  .topMainLogo {
+    width: 60%;
+    max-width: 100%;
+    min-width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .homePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .homePageTop {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: -30px;
+  
+  }
+
+  .homePageCenter {
+    color: #ffffff;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-block: 0px;
+
+  }
+  
+  .homePageBottom {
+   
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    margin: 20px;
+  }
+
+
+  .homeMenu {
+    color: #ffffff;
+    display: inline-flex;
+    justify-content: right;
+    align-items: right;
+  }
+
+  .mainMenuIcon {
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .userMenuButton { 
+    color: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 2em;
+    box-shadow: 2px 4px 20px #f0f0f0;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./images/user.png");
+    background-size: 100%;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+.userMenuButton:hover {
+
+background-image: url("./images/user.png");
+    background-size: 100%;
+}
+
+.userProfileIcon {
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .sideBarIcon {
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+
+  .sideBar{
+    height: 200vh;
+    width: 25vh;
+    
+  }
+
+  .menuIcon{
+    float: right;
+    margin: 10px;
+  }
+ 
+    .contentDiv {
+        display: inline-flex;
+        flex-wrap: wrap;
+      height: 100%;
+    }
+
+    .contentMargin {
+      margin-left: 50px;
+        position: relative;
+    }
+
+    #sidebar .pro-sidebar {
+        width: 100%;
+        min-width: 100%;
+        height: 100vh;
+        color: #383838;
+        
+        }
+
+    
+    #sidebar .pro-sidebar-layout {
+        width: 100%;
+        min-width: 100%;
+        height: 100vh;
+        background-color: #00b4b8;
+          
+        }
+
+    #sidebar .pro-sidebar.collapsed {
+            width: 65px;
+            min-width: 60px;
+        }
+
+    #sidebar .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-icon-wrapper {
+        color: #383838;
+        background-color: transparent;
+        
+        }
+
+    #sidebar .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-item-content:hover {
+            color: #f0f0f0;
+            background-color: transparent;
+            
+            }
+ 
+
+    #sidebar .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item  {
+        min-width: 100px;        
+    
+    }
+
+    #sidebar .pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu .pro-inner-list-item{
+        background-color: #00b4b8;
+    }
+    
+    
+
+    .sidebarLogo{
+        min-width: 50px;    
+        width: 100px;
+        max-width: 60%;
+        height: auto;
+    }
+
+    .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        
+    }
+
+    .sidebarText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+       
+        font-family: sans-serif;
+     
+    }
+
