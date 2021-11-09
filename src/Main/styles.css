@@ -1,0 +1,250 @@
+    
+   
+  .userMenu { 
+ 
+    border: 1px solid #383838;
+    border-radius: 2em;
+    color: #383838;
+    height: auto;
+    width: 40%;
+}
+  
+.iconSize{
+  height: 60px !important;
+  width: 60px !important;
+}
+  
+  .title {
+    font-family: "Lato", sans-serif;
+    color: #383838;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: -8px;
+    margin-top: 30px;
+  }
+
+  .subtitle {
+    font-family: "Lato", sans-serif;
+    color: #383838;
+    text-align: center;
+    font-size: 20px;
+    
+  }
+  
+  .label {
+    font-family: "Lato", sans-serif;
+    color: #383838;
+  }
+
+  .label:hover {
+    color: #ffffff;
+  }
+
+
+  .topMainLogo {
+    
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+
+
+.userProfileIcon {
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .sideBarIcon {
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+ 
+    .contentDiv {
+        display: inline-flex;
+        flex-wrap: wrap;
+      height: 100%;
+      width: 100%;
+     
+    }
+
+    .contentMargin {
+     
+      position: relative;
+      width: 100%;
+    }
+
+    #sidebar .pro-sidebar {
+     
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 100%;
+      
+      
+      width: 84px;
+      z-index: 100;
+        color: #383838;
+        overflow-y: auto;
+        
+        }
+
+    
+    #sidebar .pro-sidebar-layout ul{
+      
+  
+        background-color: #00b4b8;
+          
+        }
+
+    #sidebar .pro-sidebar.collapsed {
+            width: 50px;
+            min-width: 40px;
+            
+        }
+
+    #sidebar .pro-sidebar.collapsed .pro-menu{
+          margin-left: -15%;
+          
+      }
+
+    #sidebar .pro-sidebar.collapsed .pro-menu .pro-menu-item > .pro-inner-item > .pro-item-content {
+      visibility: hidden;
+    }
+     
+
+    #sidebar .pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item > .pro-icon-wrapper .pro-icon{
+        color: #383838;
+        background-color: transparent;
+        flex-direction: row;
+     
+    
+
+        }
+        #sidebar .pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item > .pro-icon-wrapper{
+       align-content: center;
+       align-items: center;
+       justify-content: center;
+       justify-items: center;
+       margin-right: -40%;
+        }
+
+        #sidebar .pro-sidebar.collapsed .pro-menu .pro-menu-item > .pro-inner-item > .pro-icon-wrapper{
+          margin-right: -15%;
+        }
+
+        #sidebar .pro-sidebar .pro-menu .pro-menu-item:hover > .pro-inner-item > .pro-icon-wrapper .pro-icon{
+          color: #d8d8d8;
+  
+          }
+
+          #sidebar .pro-sidebar .pro-menu .pro-menu-item:hover{
+            color: #d8d8d8;
+            
+          }
+
+          #sidebar .pro-sidebar .pro-menu .pro-menu-item{
+            background-color: transparent;
+            
+          }
+      #sidebar .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item .pro-item-content {
+
+        transition: none;
+        
+        text-align: center;
+        line-height: 1.4;
+       
+        background: transparent;
+        white-space: normal;
+        word-wrap: break-word;
+        margin-left: 50%;
+       
+    font-size: 0.83rem;
+    width: 84px;
+            
+      }
+
+      #sidebar .pro-sidebar-inner .pro-sidebar-layout ul .pro-inner-item{
+        
+        min-width: 80px !important;
+      }
+ 
+  
+
+  
+
+    #sidebar .pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item{
+      flex-direction: column;
+     
+    }
+  
+    
+    
+
+    #sidebar .pro-sidebar .pro-sidebar-inner .pro-sidebar-layout .pro-sidebar-header {
+      margin-top: 10px;
+      margin-left: 5px;
+      margin-bottom: 25px;
+      height: auto;
+      width: 150%;
+    
+
+    }
+
+   
+
+    .sidebarLogo{
+        min-width: 30px;    
+        width: 60px;
+        max-width: 60%;
+        height: auto;
+    }
+
+    .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        
+    }
+
+    .sidebarText{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+       
+        font-family: sans-serif;
+     
+    }
+
+    
+    .innerItems{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      width: 80px;
+     
+      
+  }
+
+.selectedItem{
+  
+    background: transparent !important; }
+
+.unselectedItem{
+  
+  background: transparent !important; }
+
+

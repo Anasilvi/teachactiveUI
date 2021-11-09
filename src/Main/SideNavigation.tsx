@@ -1,65 +1,121 @@
-import { useState } from "react";
-import { AiOutlineMenu, AiOutlineDashboard } from "react-icons/ai";
+import { ReactChild, ReactFragment, ReactPortal, useState } from "react";
+import { AiOutlineMenu, AiOutlineDashboard, AiOutlineUser } from "react-icons/ai";
+import {
+  UploadOutlined,
+  UserOutlined,
+  VideoCameraOutlined, 
+} from "@ant-design/icons";
 import { FaGem, FaHeart } from "react-icons/fa";
 import {
   Menu,
   MenuItem,
   ProSidebar,
+  SidebarContent,
+  SidebarFooter,
   SidebarHeader,
   SubMenu,
 } from "react-pro-sidebar";
-import "../Pages/styles.css";
+import "./styles.css";
 
 import "react-pro-sidebar/dist/css/styles.css";
 import LogoSmall from "../Login/images/LogoSmall.png";
 import { useHistory } from "react-router-dom";
+import { ComponentRoute, routes } from "./routes";
+import { SidebarContext } from "react-pro-sidebar/dist/ProSidebar/ProSidebar";
 
+import { Dropdown, Button, Space } from 'antd';
+import {BiArrowToLeft, BiHelpCircle, BiArrowToRight} from 'react-icons/bi';
+import Item from "antd/lib/list/Item";
+
+
+import MetricPage from "../Pages/metricPage";
 
 const SideNavigation = () => {
   const [collapsed, setCollapsed] = useState(false);
-  const [bgColor, setColor] = useState('#00b4b8');
-  const [itemSelected] = useState(0);
+  const [className, setClassName] = useState('unselectedItem');
+  const [pageName, setPageName] = useState(<MetricPage/>);
+var actualIndex =0;
+
+
   
   // added styles 
   
   const onClickMenuIcon = () => {
     setCollapsed(!collapsed);
+   
   };
 
-  const onSelectMenuIcon = () => {
-    
-      setColor('#ffffff');
-    
-  };
-
+  const changeIndex = (selected:boolean) => {
+    { selected
+      ?  setClassName('selectedItem')
+      :  setClassName('unselectedItem')
+    }
   
+  };
+
+
+  const changePage = (newcomponent: any) => {
+    setPageName(newcomponent);
+
+  };
+
+
+
+const history = useHistory();
   
   return (
-    <div  color="#d83636" className="sideBar" id="sidebar" >
+    <div className="contentDiv">
+    <div  color="#d83636" id="sidebar" >
     <ProSidebar color="#d83636" collapsed={collapsed}>
-      <SidebarHeader>
-        <div className='menuIcon' onClick={onClickMenuIcon}>
-          <AiOutlineMenu />
-        </div>
+      <SidebarHeader >
+       
+           <img className="topMainLogo" src={LogoSmall} />
+          
+        
       </SidebarHeader>
+      
+                <SidebarContent className='center'><AiOutlineUser className = 'userMenu'/>  <Button className='label' type="link">Logout</Button>
+        </SidebarContent>
       <Menu iconShape="square" >
-      <div className="center">
-        <img className="sidebarLogo" src={LogoSmall} />
-      </div>
-        <MenuItem  style={{backgroundColor:bgColor}}  onClick={onSelectMenuIcon}> <div className="center">{<AiOutlineDashboard size={'90%'} min-size={'70px'} /> }</div> <div className="sidebarText">Dashboard</div></MenuItem>
-        <SubMenu title="Reflections"  className='menuItem'>
-          <MenuItem>Hand Raises</MenuItem>
-          <MenuItem>Student Speech</MenuItem>
-          <MenuItem>Instructor Speech</MenuItem>
-        </SubMenu>
-        <SubMenu title="Goals" icon={<FaHeart />} className='menuItem'>
-          <MenuItem>Actual Goals</MenuItem>
-          <MenuItem>Set New Goals</MenuItem>
-        </SubMenu>
-        <MenuItem icon={<FaGem />} className='menuItem'>Progress</MenuItem>
+      {routes
+              .filter((item: ComponentRoute) => item.inSidebar)
+              .map((item: ComponentRoute, i: number) => (
+                <MenuItem  className = {className}
+                  key={i}
+                  icon={item.icon}
+                  title={item.name}
+                  //onClick={() => history.push(item.link())}
+                  //onClick={() => changeIndex(!item.selected)}
+                  onClick={() => changePage(item.component)}
+                >
+                  {item.name}
+                </MenuItem>
+              ))}
         
       </Menu>
-    </ProSidebar></div>
+      
+      <SidebarContent> <SidebarContent className='center' ><BiHelpCircle size={20}/>  <Button className='label' type="link">Help</Button>
+        </SidebarContent>
+        </SidebarContent>
+      <SidebarFooter>
+        <div className='menuIcon' onClick={onClickMenuIcon} >
+         
+          { collapsed
+          ?  <BiArrowToRight size={25} />
+          :  <BiArrowToLeft size={25} />
+        }
+        </div>
+       
+      </SidebarFooter>
+    </ProSidebar>
+    
+  </div>
+  <div className="contentMagin">
+       {pageName}
+      </div>
+    </div>
+    
   );
 };
 export default SideNavigation;
+

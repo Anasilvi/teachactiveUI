@@ -1,0 +1,60 @@
+.goalsPage {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .pageLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+  
+  .pageRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    width: 1000px;
+  }
+  
+
+  .title {
+    font-family: "Lato", sans-serif;
+    color: #383838;
+    text-align: center;
+  }
+  
+  .labelProgress {
+    font-family: "Lato", sans-serif;
+    color: #383838;
+    font-size: 0.83rem;
+  }
+
+  .marginTitles{
+    margin-top: 25%;
+    margin-bottom: 20%;
+    text-align: center;
+  }
+
+  #reflectionsBar ._2Jtxm._35Ago ._2kL0S {
+    background-color: #00b4b8;
+    line-height: 0;
+}
+
+#reflectionsBar a {
+  color: #00b4b8;
+}
+
+#reflectionsBar ._hsN1w {
+  background-color: #00b4b8;
+  color: white;
+  border: 1px  solid #00b4b8;
+}
+
+#reflectionsBar ._2Jtxm._2ZUAI ._2JvrO {
+  background-color: #00b4b8 !important;
+
+}
+
