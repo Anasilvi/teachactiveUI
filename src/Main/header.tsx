@@ -12,24 +12,7 @@ import {
 const Header = () => {
   return (
     <div >
-      <Navbar color="danger" light expand="md">
-        <NavbarBrand href="/">React Application</NavbarBrand>
-        <Nav className="mr-auto" navbar>
-          <NavItem>
-            <NavLink href="/components/">Components</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink href="https://github.com/reactstrap/reactstrap">
-              GitHub
-            </NavLink>
-          </NavItem>
-        </Nav>
-        <NavbarText>
-          <div>
-            <AiOutlineUser></AiOutlineUser>
-          </div>
-        </NavbarText>
-      </Navbar>
+     Header
     </div>
   );
 };
