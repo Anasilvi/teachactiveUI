@@ -29,6 +29,7 @@ import Item from "antd/lib/list/Item";
 
 
 import MetricPage from "../Pages/metricPage";
+import Header from "./header";
 
 const SideNavigation = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -111,7 +112,11 @@ const history = useHistory();
     
   </div>
   <div className="contentMagin">
+  <div><Header></Header></div>
+    <div>
        {pageName}
+       </div>
+       
       </div>
     </div>
     
